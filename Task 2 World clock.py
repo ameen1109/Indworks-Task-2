@@ -4,7 +4,7 @@ import pytz
 def get_local_time(country):
     tz = pytz.timezone(country)
     local_time = datetime.datetime.now(tz)
-    return local_time.strftime('%Y-%m-%d %H:%M:%S')
+    return local_time.strftime('%d-%m-%y %H:%M:%S')
 
 countries = {
     'India': 'Asia/Kolkata',
